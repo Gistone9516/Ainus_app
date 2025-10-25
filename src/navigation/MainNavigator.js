@@ -9,6 +9,7 @@ import { useAuth } from '../contexts/AuthContext';
 import HomeScreen from '../screens/HomeScreen';
 import InsightFeedScreen from '../screens/InsightFeedScreen';
 import AIRecommendScreen from '../screens/AIRecommendScreen';
+import IssueIndexScreen from '../screens/IssueIndexScreen';
 import CommunityScreen from '../screens/CommunityScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 
@@ -33,6 +34,8 @@ const TabNavigator = () => {
             icon = '📰';
           } else if (route.name === 'AIRecommend') {
             icon = '🤖';
+          } else if (route.name === 'IssueIndex') {
+            icon = '📊';
           } else if (route.name === 'Community') {
             icon = '💬';
           } else if (route.name === 'Profile') {
@@ -106,6 +109,14 @@ const TabNavigator = () => {
         options={{
           tabBarLabel: 'AI 추천',
           headerTitle: '🤖 AI 추천',
+        }}
+      />
+      <Tab.Screen
+        name="IssueIndex"
+        component={IssueIndexScreen}
+        options={{
+          tabBarLabel: '이슈 지수',
+          headerTitle: '📊 AI 이슈 지수',
         }}
       />
       <Tab.Screen
