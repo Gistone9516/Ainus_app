@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Text } from 'react-native';
+import { Text, View, Platform } from 'react-native';
 import { colors } from '../theme/colors';
 
 // Import Screens
@@ -33,25 +33,49 @@ const TabNavigator = () => {
             icon = '👤';
           }
 
-          return <Text style={{ fontSize: focused ? 24 : 20 }}>{icon}</Text>;
+          return (
+            <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{
+                fontSize: focused ? 24 : 20,
+                includeFontPadding: false,
+                textAlignVertical: 'center',
+              }}>
+                {icon}
+              </Text>
+            </View>
+          );
         },
         tabBarActiveTintColor: colors.primary,
         tabBarInactiveTintColor: colors.textSecondary,
+        tabBarLabelStyle: {
+          fontSize: 12,
+          fontWeight: '600',
+          includeFontPadding: false,
+          textAlignVertical: 'center',
+          marginTop: -4,
+          marginBottom: 4,
+        },
         tabBarStyle: {
           backgroundColor: colors.background,
           borderTopColor: colors.border,
-          paddingBottom: 8,
+          borderTopWidth: 1,
+          paddingBottom: Platform.OS === 'ios' ? 20 : 8,
           paddingTop: 8,
-          height: 60,
+          height: Platform.OS === 'ios' ? 80 : 60,
         },
         headerStyle: {
           backgroundColor: colors.primary,
+          elevation: 0,
+          shadowOpacity: 0,
         },
         headerTintColor: colors.textWhite,
         headerTitleStyle: {
           fontWeight: '600',
           fontSize: 18,
+          includeFontPadding: false,
+          textAlignVertical: 'center',
         },
+        headerTitleAlign: 'center',
       })}
     >
       <Tab.Screen

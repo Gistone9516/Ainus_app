@@ -157,6 +157,7 @@ const styles = StyleSheet.create({
     ...textStyles.body2,
     color: colors.textSecondary,
     marginBottom: spacing.xs,
+    flexShrink: 1,
   },
   actionButton: {
     marginTop: spacing.md,
