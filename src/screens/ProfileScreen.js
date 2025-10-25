@@ -1,16 +1,20 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Card from '../components/common/Card';
 import Button from '../components/common/Button';
+import { useAuth } from '../contexts/AuthContext';
 import { colors } from '../theme/colors';
 import { textStyles } from '../theme/typography';
 import { spacing, borderRadius } from '../theme/spacing';
 
 const ProfileScreen = () => {
+  const { user, logout } = useAuth();
+
   // Mock user data - 실제로는 API에서 가져옴
   const userData = {
-    name: '최수안',
+    name: user?.nickname || '최수안',
+    email: user?.email || 'user@example.com',
     job: '소프트웨어 개발자',
     ageGroup: '30대',
     aiExperience: '중급',
@@ -58,6 +62,23 @@ const ProfileScreen = () => {
 
   const handleMenuItem = (itemId) => {
     // Handle menu item navigation
+  };
+
+  const handleLogout = () => {
+    Alert.alert(
+      '로그아웃',
+      '정말 로그아웃 하시겠습니까?',
+      [
+        { text: '취소', style: 'cancel' },
+        {
+          text: '로그아웃',
+          style: 'destructive',
+          onPress: async () => {
+            await logout();
+          }
+        },
+      ]
+    );
   };
 
   return (
@@ -215,9 +236,23 @@ const ProfileScreen = () => {
             title="로그아웃"
             variant="outline"
             fullWidth
-            onPress={() => {/* Handle logout */}}
+            onPress={handleLogout}
           />
         </View>
+
+        {/* User Info (for debugging) */}
+        {user && (
+          <View style={styles.section}>
+            <Card style={styles.debugCard}>
+              <Text style={styles.debugTitle}>로그인 정보</Text>
+              <Text style={styles.debugText}>이메일: {user.email}</Text>
+              <Text style={styles.debugText}>닉네임: {user.nickname}</Text>
+              <Text style={styles.debugText}>
+                인증 방식: {user.auth_provider}
+              </Text>
+            </Card>
+          </View>
+        )}
 
         {/* Bottom Padding */}
         <View style={{ height: spacing.xl }} />
@@ -496,6 +531,22 @@ const styles = StyleSheet.create({
   menuArrow: {
     ...textStyles.h4,
     color: colors.textLight,
+  },
+  debugCard: {
+    backgroundColor: colors.backgroundGray,
+    borderWidth: 1,
+    borderColor: colors.border,
+  },
+  debugTitle: {
+    ...textStyles.body1,
+    fontWeight: '600',
+    color: colors.text,
+    marginBottom: spacing.sm,
+  },
+  debugText: {
+    ...textStyles.body2,
+    color: colors.textSecondary,
+    marginBottom: spacing.xs,
   },
 });
 

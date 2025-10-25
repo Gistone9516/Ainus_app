@@ -17,6 +17,7 @@ export const colors = {
 
   // Text Colors
   text: '#1F2937',
+  textPrimary: '#1F2937',
   textSecondary: '#6B7280',
   textLight: '#9CA3AF',
   textWhite: '#FFFFFF',
@@ -25,6 +26,7 @@ export const colors = {
   success: '#10B981', // 녹색
   warning: '#F59E0B', // 오렌지
   danger: '#EF4444', // 빨강
+  error: '#EF4444', // 에러 (빨강)
   info: '#3B82F6', // 파랑
 
   // Issue Index Colors (위험도)
@@ -39,6 +41,7 @@ export const colors = {
 
   // Card & Surface
   card: '#FFFFFF',
+  surface: '#FFFFFF',
   cardHover: '#F3F4F6',
 
   // Special Colors
