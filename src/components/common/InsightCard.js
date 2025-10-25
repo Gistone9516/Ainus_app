@@ -140,6 +140,8 @@ const styles = StyleSheet.create({
   categoryBadge: {
     flexDirection: 'row',
     alignItems: 'center',
+    flex: 1,
+    flexShrink: 1,
   },
   categoryIcon: {
     fontSize: 16,
@@ -148,6 +150,7 @@ const styles = StyleSheet.create({
   categoryText: {
     ...textStyles.body2,
     fontWeight: '600',
+    flexShrink: 1,
   },
   timestamp: {
     ...textStyles.caption,
@@ -157,12 +160,13 @@ const styles = StyleSheet.create({
     ...textStyles.h4,
     color: colors.text,
     marginBottom: spacing.sm,
+    flexShrink: 1,
   },
   description: {
     ...textStyles.body2,
     color: colors.textSecondary,
     marginBottom: spacing.md,
-    lineHeight: 20,
+    flexShrink: 1,
   },
   riskContainer: {
     flexDirection: 'row',

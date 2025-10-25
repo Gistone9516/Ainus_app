@@ -100,6 +100,8 @@ const styles = StyleSheet.create({
   buttonText: {
     ...textStyles.button,
     color: colors.textWhite,
+    includeFontPadding: false,
+    textAlignVertical: 'center',
   },
   primaryText: {
     color: colors.textWhite,
@@ -117,12 +119,15 @@ const styles = StyleSheet.create({
   // Size Text
   smallText: {
     fontSize: 14,
+    lineHeight: 20,
   },
   mediumText: {
     fontSize: 16,
+    lineHeight: 24,
   },
   largeText: {
     fontSize: 18,
+    lineHeight: 26,
   },
 });
 
