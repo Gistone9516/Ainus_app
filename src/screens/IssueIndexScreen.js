@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import {
   View,
   Text,
@@ -27,7 +27,7 @@ const IssueIndexScreen = () => {
   const [refreshing, setRefreshing] = useState(false);
 
   // 데이터 로드
-  const loadData = async () => {
+  const loadData = useCallback(async () => {
     try {
       const latest = issueIndexService.getLatestUpdate();
       const chart = issueIndexService.getChartData(period);
@@ -42,11 +42,11 @@ const IssueIndexScreen = () => {
       setLoading(false);
       setRefreshing(false);
     }
-  };
+  }, [period]);
 
   useEffect(() => {
     loadData();
-  }, [period]);
+  }, [loadData]);
 
   // 새로고침
   const handleRefresh = () => {
