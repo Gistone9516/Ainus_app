@@ -1,0 +1,510 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2025-10-25",
+    "description": "AI 이슈 지수 긴급 갱신 데이터 (예상치 못한 이슈 발생 시)",
+    "update_count": 3,
+    "period": "2025-08-28 ~ 2025-10-10"
+  },
+  "emergency_updates": [
+    {
+      "update_id": "EU_001",
+      "index_date": "2025-08-28",
+      "update_type": "emergency",
+      "update_time": "2025-08-28T15:30:00Z",
+      "triggered_at": "2025-08-28T15:30:00Z",
+      "current_score": 72.8,
+      "previous_score": 46.2,
+      "comparison_percentage": 57.57,
+      "main_keyword": "ChatGPT 서비스 장애",
+      "trend_direction": "up",
+      "status": "해결됨",
+      "trigger_reason": "뉴스 기사 급증 (3시간 내 12개) + Google Trends 급상승 (120%)",
+      "emergency_duration_hours": 6,
+      "emergency_notes": "ChatGPT 서비스 전 세계 동시 장애 발생 후 3시간 내 복구. 사용자 불편 최소화",
+      "severity_level": "high",
+      "recovery_timeline": [
+        {
+          "time": "2025-08-28T14:30:00Z",
+          "event": "ChatGPT 서비스 장애 시작",
+          "description": "전 세계적으로 ChatGPT 접속 불가 현상 발생"
+        },
+        {
+          "time": "2025-08-28T14:45:00Z",
+          "event": "OpenAI 공식 장애 인정",
+          "description": "OpenAI 트위터 계정을 통해 공식 장애 인정 및 복구 작업 진행 중 공지"
+        },
+        {
+          "time": "2025-08-28T15:30:00Z",
+          "event": "긴급 이슈 지수 갱신 트리거",
+          "description": "뉴스 기사 급증 및 검색량 급상승으로 자동 긴급 갱신"
+        },
+        {
+          "time": "2025-08-28T16:20:00Z",
+          "event": "부분 복구 시작",
+          "description": "일부 지역에서 서비스 접속 가능"
+        },
+        {
+          "time": "2025-08-28T17:30:00Z",
+          "event": "완전 복구 완료",
+          "description": "전 세계 서비스 정상화"
+        },
+        {
+          "time": "2025-08-28T20:30:00Z",
+          "event": "상황 종료",
+          "description": "OpenAI 공식 사과문 발표 및 재발 방지 대책 공개"
+        }
+      ],
+      "weight_breakdown": {
+        "news_weight": {
+          "score": 38.5,
+          "percentage": 40.0,
+          "contribution": 15.4,
+          "details": {
+            "article_count": 12,
+            "article_count_score": 95,
+            "publishing_frequency_multiplier": 1.8,
+            "keyword_diversity": 2,
+            "keyword_diversity_multiplier": 0.75,
+            "freshness_multiplier": 1.0,
+            "formula": "(95 × 1.8 + 0.75) × 1.0 = 171.75 → normalized to 38.5"
+          }
+        },
+        "trend_weight": {
+          "score": 41.2,
+          "percentage": 40.0,
+          "contribution": 16.5,
+          "details": {
+            "trend_growth": 120,
+            "trend_growth_score": 100,
+            "keyword_convergence": 2,
+            "keyword_convergence_multiplier": 1.5,
+            "news_correlation_multiplier": 1.3,
+            "formula": "100 × 1.5 × 1.3 = 195 → normalized to 41.2"
+          }
+        },
+        "volatility_weight": {
+          "score": 21.1,
+          "percentage": 20.0,
+          "contribution": 4.2,
+          "details": {
+            "change_rate": 57.57,
+            "change_rate_score": 88,
+            "continuity_weeks": 0,
+            "continuity_multiplier": 2.0,
+            "formula": "88 × 2.0 = 176 → normalized to 21.1"
+          }
+        }
+      },
+      "total_calculation": {
+        "formula": "(38.5 × 0.4) + (41.2 × 0.4) + (21.1 × 0.2) = 72.8"
+      },
+      "top_articles": [
+        {
+          "rank": 1,
+          "title": "ChatGPT 전 세계 동시 접속 장애 발생",
+          "source": "연합뉴스",
+          "published_at": "2025-08-28T14:35:00Z",
+          "summary": "ChatGPT 서비스가 전 세계적으로 동시에 접속 불가 현상이 발생하며 사용자 혼란",
+          "url": "https://news.example.com/chatgpt-outage",
+          "contribution": 0.45
+        },
+        {
+          "rank": 2,
+          "title": "OpenAI, 긴급 복구 작업 진행 중",
+          "source": "테크크런치코리아",
+          "published_at": "2025-08-28T14:50:00Z",
+          "summary": "OpenAI가 장애 원인을 파악하고 긴급 복구 작업에 착수했다고 발표",
+          "url": "https://news.example.com/openai-recovery",
+          "contribution": 0.35
+        },
+        {
+          "rank": 3,
+          "title": "ChatGPT 장애, 의존도 높은 기업들 업무 마비",
+          "source": "한국경제",
+          "published_at": "2025-08-28T15:10:00Z",
+          "summary": "ChatGPT를 업무에 활용하는 기업들이 일시적 업무 중단 사태를 겪음",
+          "url": "https://news.example.com/chatgpt-business-impact",
+          "contribution": 0.20
+        }
+      ],
+      "top_keywords": [
+        {
+          "keyword": "ChatGPT 장애",
+          "trend_level": "very_high",
+          "search_volume": 100,
+          "contribution": 0.55
+        },
+        {
+          "keyword": "OpenAI",
+          "trend_level": "very_high",
+          "search_volume": 95,
+          "contribution": 0.25
+        },
+        {
+          "keyword": "서비스 장애",
+          "trend_level": "high",
+          "search_volume": 78,
+          "contribution": 0.12
+        },
+        {
+          "keyword": "접속 불가",
+          "trend_level": "medium",
+          "search_volume": 62,
+          "contribution": 0.05
+        },
+        {
+          "keyword": "복구",
+          "trend_level": "medium",
+          "search_volume": 55,
+          "contribution": 0.03
+        }
+      ],
+      "source_references": {
+        "news_analysis": "한국언론진흥재단 (2023) - 뉴스 빅데이터 분석",
+        "trend_analysis": "Google Trends 공식 가이드 (2023)",
+        "data_sources": [
+          "Naver News API",
+          "Google Trends API (pytrends)",
+          "IT뉴스 수동 모니터링",
+          "OpenAI 공식 발표"
+        ]
+      }
+    },
+    {
+      "update_id": "EU_002",
+      "index_date": "2025-09-15",
+      "update_type": "emergency",
+      "update_time": "2025-09-15T18:45:00Z",
+      "triggered_at": "2025-09-15T18:45:00Z",
+      "current_score": 81.2,
+      "previous_score": 49.6,
+      "comparison_percentage": 63.84,
+      "main_keyword": "LLM 보안 취약점",
+      "trend_direction": "up",
+      "status": "해결됨",
+      "trigger_reason": "뉴스 기사 급증 (6시간 내 18개) + Google Trends 급상승 (180%) + 심각도 높음",
+      "emergency_duration_hours": 12,
+      "emergency_notes": "주요 LLM 모델에서 심각한 보안 취약점 발견. CVSS 9.8 점의 치명적 취약점으로 긴급 패치 배포",
+      "severity_level": "critical",
+      "recovery_timeline": [
+        {
+          "time": "2025-09-15T16:00:00Z",
+          "event": "보안 취약점 최초 공개",
+          "description": "보안 연구진이 주요 LLM 모델의 치명적 취약점 공개"
+        },
+        {
+          "time": "2025-09-15T16:30:00Z",
+          "event": "CVSS 점수 9.8 부여",
+          "description": "CVE 데이터베이스에 CVSS 9.8(치명적) 점수로 등록"
+        },
+        {
+          "time": "2025-09-15T17:15:00Z",
+          "event": "주요 AI 기업 긴급 회의",
+          "description": "OpenAI, Google, Anthropic 등 긴급 대응 회의 소집"
+        },
+        {
+          "time": "2025-09-15T18:45:00Z",
+          "event": "긴급 이슈 지수 갱신 트리거",
+          "description": "심각도 및 뉴스 급증으로 자동 긴급 갱신"
+        },
+        {
+          "time": "2025-09-15T22:00:00Z",
+          "event": "긴급 패치 배포 시작",
+          "description": "주요 AI 기업들이 동시에 보안 패치 배포"
+        },
+        {
+          "time": "2025-09-16T02:30:00Z",
+          "event": "패치 적용 완료",
+          "description": "대부분의 서비스에 패치 적용 완료"
+        },
+        {
+          "time": "2025-09-16T04:00:00Z",
+          "event": "상황 종료",
+          "description": "보안 위협 제거 확인 및 안정화"
+        }
+      ],
+      "weight_breakdown": {
+        "news_weight": {
+          "score": 42.8,
+          "percentage": 40.0,
+          "contribution": 17.1,
+          "details": {
+            "article_count": 18,
+            "article_count_score": 100,
+            "publishing_frequency_multiplier": 2.0,
+            "keyword_diversity": 4,
+            "keyword_diversity_multiplier": 1.2,
+            "freshness_multiplier": 1.0,
+            "formula": "(100 × 2.0 + 1.2) × 1.0 = 201.2 → normalized to 42.8"
+          }
+        },
+        "trend_weight": {
+          "score": 45.5,
+          "percentage": 40.0,
+          "contribution": 18.2,
+          "details": {
+            "trend_growth": 180,
+            "trend_growth_score": 100,
+            "keyword_convergence": 4,
+            "keyword_convergence_multiplier": 1.6,
+            "news_correlation_multiplier": 1.4,
+            "formula": "100 × 1.6 × 1.4 = 224 → normalized to 45.5"
+          }
+        },
+        "volatility_weight": {
+          "score": 24.9,
+          "percentage": 20.0,
+          "contribution": 5.0,
+          "details": {
+            "change_rate": 63.84,
+            "change_rate_score": 95,
+            "continuity_weeks": 0,
+            "continuity_multiplier": 2.2,
+            "formula": "95 × 2.2 = 209 → normalized to 24.9"
+          }
+        }
+      },
+      "total_calculation": {
+        "formula": "(42.8 × 0.4) + (45.5 × 0.4) + (24.9 × 0.2) = 81.2"
+      },
+      "top_articles": [
+        {
+          "rank": 1,
+          "title": "LLM 모델에 CVSS 9.8 치명적 취약점 발견",
+          "source": "보안뉴스",
+          "published_at": "2025-09-15T16:10:00Z",
+          "summary": "보안 연구진이 주요 대형 언어 모델에서 CVSS 9.8 점의 치명적 보안 취약점 발견",
+          "url": "https://news.example.com/llm-critical-vulnerability",
+          "contribution": 0.48
+        },
+        {
+          "rank": 2,
+          "title": "OpenAI, Google 긴급 보안 패치 배포",
+          "source": "테크크런치코리아",
+          "published_at": "2025-09-15T22:15:00Z",
+          "summary": "주요 AI 기업들이 보안 취약점 대응을 위한 긴급 패치를 동시 배포",
+          "url": "https://news.example.com/ai-emergency-patch",
+          "contribution": 0.32
+        },
+        {
+          "rank": 3,
+          "title": "AI 보안 위협, 산업 전반에 경각심 고조",
+          "source": "디지털타임스",
+          "published_at": "2025-09-15T19:30:00Z",
+          "summary": "이번 취약점 발견으로 AI 보안에 대한 인식과 투자 필요성 부각",
+          "url": "https://news.example.com/ai-security-awareness",
+          "contribution": 0.20
+        }
+      ],
+      "top_keywords": [
+        {
+          "keyword": "LLM 취약점",
+          "trend_level": "very_high",
+          "search_volume": 100,
+          "contribution": 0.50
+        },
+        {
+          "keyword": "CVSS 9.8",
+          "trend_level": "very_high",
+          "search_volume": 92,
+          "contribution": 0.25
+        },
+        {
+          "keyword": "보안 패치",
+          "trend_level": "high",
+          "search_volume": 85,
+          "contribution": 0.15
+        },
+        {
+          "keyword": "AI 보안",
+          "trend_level": "high",
+          "search_volume": 75,
+          "contribution": 0.07
+        },
+        {
+          "keyword": "취약점",
+          "trend_level": "medium",
+          "search_volume": 62,
+          "contribution": 0.03
+        }
+      ],
+      "source_references": {
+        "news_analysis": "한국언론진흥재단 (2023) - 뉴스 빅데이터 분석",
+        "trend_analysis": "Google Trends 공식 가이드 (2023)",
+        "data_sources": [
+          "Naver News API",
+          "Google Trends API (pytrends)",
+          "IT뉴스 수동 모니터링",
+          "CVE 데이터베이스",
+          "보안 업체 공식 발표"
+        ]
+      }
+    },
+    {
+      "update_id": "EU_003",
+      "index_date": "2025-10-10",
+      "update_type": "emergency",
+      "update_time": "2025-10-10T20:15:00Z",
+      "triggered_at": "2025-10-10T20:15:00Z",
+      "current_score": 88.5,
+      "previous_score": 55.3,
+      "comparison_percentage": 59.98,
+      "main_keyword": "GPT-5 정보 유출",
+      "trend_direction": "up",
+      "status": "진행 중",
+      "trigger_reason": "뉴스 기사 급증 (4시간 내 25개) + Google Trends 급상승 (250%) + 특정 키워드 트렌드 점수 > 85",
+      "emergency_duration_hours": null,
+      "emergency_notes": "GPT-5 관련 내부 정보 유출 의혹 제기. OpenAI 공식 입장 발표 대기 중. 상황 진행 중",
+      "severity_level": "critical",
+      "recovery_timeline": [
+        {
+          "time": "2025-10-10T17:30:00Z",
+          "event": "GPT-5 정보 유출 첫 보도",
+          "description": "해외 IT 매체가 GPT-5 관련 내부 정보 유출 의혹 최초 보도"
+        },
+        {
+          "time": "2025-10-10T18:15:00Z",
+          "event": "소셜 미디어 확산",
+          "description": "Twitter, Reddit 등에서 관련 정보 급속 확산"
+        },
+        {
+          "time": "2025-10-10T19:00:00Z",
+          "event": "주요 언론사 후속 보도",
+          "description": "국내외 주요 언론사들이 후속 보도 시작"
+        },
+        {
+          "time": "2025-10-10T20:15:00Z",
+          "event": "긴급 이슈 지수 갱신 트리거",
+          "description": "뉴스 급증 및 검색량 폭증으로 자동 긴급 갱신"
+        },
+        {
+          "time": "2025-10-10T21:30:00Z",
+          "event": "OpenAI 간략 성명 발표",
+          "description": "OpenAI가 간략한 성명을 통해 사실 관계 확인 중이라고 발표"
+        },
+        {
+          "time": "2025-10-10T23:00:00Z",
+          "event": "상황 진행 중",
+          "description": "OpenAI 공식 입장 발표 대기 중. 계속 모니터링 중"
+        }
+      ],
+      "weight_breakdown": {
+        "news_weight": {
+          "score": 48.2,
+          "percentage": 40.0,
+          "contribution": 19.3,
+          "details": {
+            "article_count": 25,
+            "article_count_score": 100,
+            "publishing_frequency_multiplier": 2.2,
+            "keyword_diversity": 6,
+            "keyword_diversity_multiplier": 1.4,
+            "freshness_multiplier": 1.0,
+            "formula": "(100 × 2.2 + 1.4) × 1.0 = 221.4 → normalized to 48.2"
+          }
+        },
+        "trend_weight": {
+          "score": 52.5,
+          "percentage": 40.0,
+          "contribution": 21.0,
+          "details": {
+            "trend_growth": 250,
+            "trend_growth_score": 100,
+            "keyword_convergence": 5,
+            "keyword_convergence_multiplier": 1.8,
+            "news_correlation_multiplier": 1.5,
+            "formula": "100 × 1.8 × 1.5 = 270 → normalized to 52.5"
+          }
+        },
+        "volatility_weight": {
+          "score": 28.3,
+          "percentage": 20.0,
+          "contribution": 5.7,
+          "details": {
+            "change_rate": 59.98,
+            "change_rate_score": 100,
+            "continuity_weeks": 0,
+            "continuity_multiplier": 2.5,
+            "formula": "100 × 2.5 = 250 → normalized to 28.3"
+          }
+        }
+      },
+      "total_calculation": {
+        "formula": "(48.2 × 0.4) + (52.5 × 0.4) + (28.3 × 0.2) = 88.5"
+      },
+      "top_articles": [
+        {
+          "rank": 1,
+          "title": "GPT-5 개발 정보 유출 의혹, AI 업계 충격",
+          "source": "AI타임스",
+          "published_at": "2025-10-10T17:45:00Z",
+          "summary": "OpenAI의 차세대 모델 GPT-5에 대한 내부 정보가 유출되었다는 의혹 제기",
+          "url": "https://news.example.com/gpt5-leak-allegation",
+          "contribution": 0.50
+        },
+        {
+          "rank": 2,
+          "title": "OpenAI, 정보 유출 사실 관계 확인 중",
+          "source": "테크크런치코리아",
+          "published_at": "2025-10-10T21:40:00Z",
+          "summary": "OpenAI가 공식 성명을 통해 사실 관계 확인 중이며 추가 발표 예정이라고 밝힘",
+          "url": "https://news.example.com/openai-statement",
+          "contribution": 0.30
+        },
+        {
+          "rank": 3,
+          "title": "GPT-5 유출 정보 분석, 성능 획기적 향상 예상",
+          "source": "ZDNet Korea",
+          "published_at": "2025-10-10T19:20:00Z",
+          "summary": "유출된 정보를 분석한 결과 GPT-5의 성능이 현재 모델 대비 획기적으로 향상될 것으로 예상",
+          "url": "https://news.example.com/gpt5-performance-analysis",
+          "contribution": 0.20
+        }
+      ],
+      "top_keywords": [
+        {
+          "keyword": "GPT-5 유출",
+          "trend_level": "very_high",
+          "search_volume": 100,
+          "contribution": 0.55
+        },
+        {
+          "keyword": "OpenAI",
+          "trend_level": "very_high",
+          "search_volume": 98,
+          "contribution": 0.22
+        },
+        {
+          "keyword": "정보 유출",
+          "trend_level": "very_high",
+          "search_volume": 88,
+          "contribution": 0.12
+        },
+        {
+          "keyword": "GPT-5",
+          "trend_level": "high",
+          "search_volume": 82,
+          "contribution": 0.08
+        },
+        {
+          "keyword": "AI 보안",
+          "trend_level": "medium",
+          "search_volume": 65,
+          "contribution": 0.03
+        }
+      ],
+      "source_references": {
+        "news_analysis": "한국언론진흥재단 (2023) - 뉴스 빅데이터 분석",
+        "trend_analysis": "Google Trends 공식 가이드 (2023)",
+        "data_sources": [
+          "Naver News API",
+          "Google Trends API (pytrends)",
+          "IT뉴스 수동 모니터링",
+          "소셜 미디어 모니터링 (Twitter, Reddit)",
+          "OpenAI 공식 발표"
+        ]
+      }
+    }
+  ]
+}

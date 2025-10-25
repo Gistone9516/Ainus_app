@@ -1,0 +1,16 @@
+update_id,index_date,update_type,current_score,previous_score,comparison_percentage,main_keyword,trend_direction,status
+RU_001,2025-08-03,regular,42.3,38.5,9.88,Claude 3.1 출시,up,정상
+RU_002,2025-08-10,regular,45.6,42.3,7.78,AI 일자리 감소 우려,up,정상
+RU_003,2025-08-17,regular,48.2,45.6,5.70,AI 규제 움직임,up,정상
+RU_004,2025-08-24,regular,50.1,48.2,3.94,GPT-5 개발 진행 중,up,정상
+EU_001,2025-08-28,emergency,72.8,46.2,57.57,ChatGPT 서비스 장애,up,해결됨
+RU_005,2025-08-31,regular,48.5,50.1,-3.19,AI 윤리 논의,down,정상
+RU_006,2025-09-07,regular,46.2,48.5,-4.74,AI 서비스 통합,down,정상
+RU_007,2025-09-14,regular,51.8,46.2,12.12,AI 투자 열풍,up,정상
+EU_002,2025-09-15,emergency,81.2,49.6,63.84,LLM 보안 취약점,up,해결됨
+RU_008,2025-09-21,regular,54.3,51.8,4.83,AI 보안 위협,up,정상
+RU_009,2025-09-28,regular,52.1,54.3,-4.05,AI 기업 실적,down,정상
+RU_010,2025-10-05,regular,55.7,52.1,6.91,AI 국제 표준,up,정상
+EU_003,2025-10-10,emergency,88.5,55.3,59.98,GPT-5 정보 유출,up,진행 중
+RU_011,2025-10-12,regular,58.2,55.7,4.48,AI 의료 활용,up,정상
+RU_012,2025-10-19,regular,61.5,58.2,5.67,GPT-5 출시 임박,up,정상

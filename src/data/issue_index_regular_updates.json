@@ -1,0 +1,1523 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2025-10-25",
+    "description": "AI 이슈 지수 정기 갱신 데이터 (매주 일요일 자동 갱신)",
+    "update_count": 12,
+    "period": "2025-08-03 ~ 2025-10-19"
+  },
+  "regular_updates": [
+    {
+      "update_id": "RU_001",
+      "index_date": "2025-08-03",
+      "update_type": "regular",
+      "update_time": "2025-08-03T00:00:00Z",
+      "current_score": 42.3,
+      "previous_score": 38.5,
+      "comparison_percentage": 9.88,
+      "main_keyword": "Claude 3.1 출시",
+      "trend_direction": "up",
+      "status": "정상",
+      "weight_breakdown": {
+        "news_weight": {
+          "score": 18.5,
+          "percentage": 40.0,
+          "contribution": 7.4,
+          "details": {
+            "article_count": 12,
+            "article_count_score": 35,
+            "publishing_frequency_multiplier": 1.2,
+            "keyword_diversity": 3,
+            "keyword_diversity_multiplier": 0.9,
+            "freshness_multiplier": 0.95,
+            "formula": "(35 × 1.2 + 0.9) × 0.95 = 40.85 → normalized to 18.5"
+          }
+        },
+        "trend_weight": {
+          "score": 16.2,
+          "percentage": 40.0,
+          "contribution": 6.5,
+          "details": {
+            "trend_growth": 28,
+            "trend_growth_score": 56,
+            "keyword_convergence": 2,
+            "keyword_convergence_multiplier": 0.85,
+            "news_correlation_multiplier": 1.0,
+            "formula": "56 × 0.85 × 1.0 = 47.6 → normalized to 16.2"
+          }
+        },
+        "volatility_weight": {
+          "score": 7.6,
+          "percentage": 20.0,
+          "contribution": 1.5,
+          "details": {
+            "change_rate": 9.88,
+            "change_rate_score": 28,
+            "continuity_weeks": 1,
+            "continuity_multiplier": 0.8,
+            "formula": "28 × 0.8 = 22.4 → normalized to 7.6"
+          }
+        }
+      },
+      "total_calculation": {
+        "formula": "(18.5 × 0.4) + (16.2 × 0.4) + (7.6 × 0.2) = 42.3"
+      },
+      "top_articles": [
+        {
+          "rank": 1,
+          "title": "Anthropic, Claude 3.1 공식 출시 발표",
+          "source": "AI타임스",
+          "published_at": "2025-08-02T14:30:00Z",
+          "summary": "Anthropic이 Claude 3.1 버전을 공식 출시하며 코딩 능력과 문맥 이해 능력이 대폭 향상되었다고 발표",
+          "url": "https://news.example.com/claude-3-1-release",
+          "contribution": 0.35
+        },
+        {
+          "rank": 2,
+          "title": "AI 모델 경쟁 심화, 국내 기업 대응 전략은?",
+          "source": "한국경제",
+          "published_at": "2025-08-02T10:20:00Z",
+          "summary": "글로벌 AI 모델 경쟁이 치열해지는 가운데 국내 기업들의 대응 전략에 관심 집중",
+          "url": "https://news.example.com/ai-competition",
+          "contribution": 0.28
+        },
+        {
+          "rank": 3,
+          "title": "생성형 AI 시장 규모, 전년 대비 200% 성장",
+          "source": "테크크런치코리아",
+          "published_at": "2025-08-01T18:45:00Z",
+          "summary": "생성형 AI 시장이 빠르게 성장하며 다양한 산업 분야에서 활용도가 증가하고 있음",
+          "url": "https://news.example.com/ai-market-growth",
+          "contribution": 0.22
+        }
+      ],
+      "top_keywords": [
+        {
+          "keyword": "Claude 3.1",
+          "trend_level": "very_high",
+          "search_volume": 85,
+          "contribution": 0.40
+        },
+        {
+          "keyword": "AI 모델",
+          "trend_level": "high",
+          "search_volume": 72,
+          "contribution": 0.25
+        },
+        {
+          "keyword": "생성형 AI",
+          "trend_level": "high",
+          "search_volume": 68,
+          "contribution": 0.20
+        },
+        {
+          "keyword": "AI 경쟁",
+          "trend_level": "medium",
+          "search_volume": 45,
+          "contribution": 0.10
+        },
+        {
+          "keyword": "Anthropic",
+          "trend_level": "medium",
+          "search_volume": 38,
+          "contribution": 0.05
+        }
+      ],
+      "source_references": {
+        "news_analysis": "한국언론진흥재단 (2023) - 뉴스 빅데이터 분석",
+        "trend_analysis": "Google Trends 공식 가이드 (2023)",
+        "data_sources": [
+          "Naver News API",
+          "Google Trends API (pytrends)",
+          "IT뉴스 수동 모니터링"
+        ]
+      }
+    },
+    {
+      "update_id": "RU_002",
+      "index_date": "2025-08-10",
+      "update_type": "regular",
+      "update_time": "2025-08-10T00:00:00Z",
+      "current_score": 45.6,
+      "previous_score": 42.3,
+      "comparison_percentage": 7.78,
+      "main_keyword": "AI 일자리 감소 우려",
+      "trend_direction": "up",
+      "status": "정상",
+      "weight_breakdown": {
+        "news_weight": {
+          "score": 20.2,
+          "percentage": 40.0,
+          "contribution": 8.1,
+          "details": {
+            "article_count": 15,
+            "article_count_score": 42,
+            "publishing_frequency_multiplier": 1.3,
+            "keyword_diversity": 4,
+            "keyword_diversity_multiplier": 1.1,
+            "freshness_multiplier": 0.9,
+            "formula": "(42 × 1.3 + 1.1) × 0.9 = 50.4 → normalized to 20.2"
+          }
+        },
+        "trend_weight": {
+          "score": 18.5,
+          "percentage": 40.0,
+          "contribution": 7.4,
+          "details": {
+            "trend_growth": 32,
+            "trend_growth_score": 64,
+            "keyword_convergence": 3,
+            "keyword_convergence_multiplier": 1.0,
+            "news_correlation_multiplier": 1.1,
+            "formula": "64 × 1.0 × 1.1 = 70.4 → normalized to 18.5"
+          }
+        },
+        "volatility_weight": {
+          "score": 6.9,
+          "percentage": 20.0,
+          "contribution": 1.4,
+          "details": {
+            "change_rate": 7.78,
+            "change_rate_score": 25,
+            "continuity_weeks": 2,
+            "continuity_multiplier": 1.0,
+            "formula": "25 × 1.0 = 25 → normalized to 6.9"
+          }
+        }
+      },
+      "total_calculation": {
+        "formula": "(20.2 × 0.4) + (18.5 × 0.4) + (6.9 × 0.2) = 45.6"
+      },
+      "top_articles": [
+        {
+          "rank": 1,
+          "title": "AI 도입으로 인한 일자리 감소, 전문가들 우려 표명",
+          "source": "매일경제",
+          "published_at": "2025-08-09T16:20:00Z",
+          "summary": "생성형 AI 확산으로 다양한 직종에서 일자리 감소 현상이 나타나고 있어 대책 마련 필요",
+          "url": "https://news.example.com/ai-job-impact",
+          "contribution": 0.40
+        },
+        {
+          "rank": 2,
+          "title": "정부, AI 시대 대비 재교육 프로그램 추진",
+          "source": "연합뉴스",
+          "published_at": "2025-08-09T11:30:00Z",
+          "summary": "정부가 AI로 인한 직업 변화에 대응하기 위한 재교육 및 전환 교육 프로그램을 발표",
+          "url": "https://news.example.com/government-ai-education",
+          "contribution": 0.32
+        },
+        {
+          "rank": 3,
+          "title": "기업들, AI 활용 확대하며 인력 구조조정 시작",
+          "source": "조선일보",
+          "published_at": "2025-08-08T20:15:00Z",
+          "summary": "국내 주요 기업들이 AI 도입을 확대하면서 동시에 인력 구조조정에 나서",
+          "url": "https://news.example.com/companies-ai-restructuring",
+          "contribution": 0.28
+        }
+      ],
+      "top_keywords": [
+        {
+          "keyword": "AI 일자리",
+          "trend_level": "very_high",
+          "search_volume": 92,
+          "contribution": 0.45
+        },
+        {
+          "keyword": "고용 감소",
+          "trend_level": "high",
+          "search_volume": 78,
+          "contribution": 0.22
+        },
+        {
+          "keyword": "재교육",
+          "trend_level": "high",
+          "search_volume": 65,
+          "contribution": 0.18
+        },
+        {
+          "keyword": "구조조정",
+          "trend_level": "medium",
+          "search_volume": 52,
+          "contribution": 0.10
+        },
+        {
+          "keyword": "AI 도입",
+          "trend_level": "medium",
+          "search_volume": 48,
+          "contribution": 0.05
+        }
+      ],
+      "source_references": {
+        "news_analysis": "한국언론진흥재단 (2023) - 뉴스 빅데이터 분석",
+        "trend_analysis": "Google Trends 공식 가이드 (2023)",
+        "data_sources": [
+          "Naver News API",
+          "Google Trends API (pytrends)",
+          "IT뉴스 수동 모니터링"
+        ]
+      }
+    },
+    {
+      "update_id": "RU_003",
+      "index_date": "2025-08-17",
+      "update_type": "regular",
+      "update_time": "2025-08-17T00:00:00Z",
+      "current_score": 48.2,
+      "previous_score": 45.6,
+      "comparison_percentage": 5.70,
+      "main_keyword": "AI 규제 움직임",
+      "trend_direction": "up",
+      "status": "정상",
+      "weight_breakdown": {
+        "news_weight": {
+          "score": 21.5,
+          "percentage": 40.0,
+          "contribution": 8.6,
+          "details": {
+            "article_count": 18,
+            "article_count_score": 48,
+            "publishing_frequency_multiplier": 1.2,
+            "keyword_diversity": 5,
+            "keyword_diversity_multiplier": 1.3,
+            "freshness_multiplier": 0.85,
+            "formula": "(48 × 1.2 + 1.3) × 0.85 = 50.0 → normalized to 21.5"
+          }
+        },
+        "trend_weight": {
+          "score": 19.3,
+          "percentage": 40.0,
+          "contribution": 7.7,
+          "details": {
+            "trend_growth": 38,
+            "trend_growth_score": 76,
+            "keyword_convergence": 4,
+            "keyword_convergence_multiplier": 1.2,
+            "news_correlation_multiplier": 0.95,
+            "formula": "76 × 1.2 × 0.95 = 86.6 → normalized to 19.3"
+          }
+        },
+        "volatility_weight": {
+          "score": 7.4,
+          "percentage": 20.0,
+          "contribution": 1.5,
+          "details": {
+            "change_rate": 5.70,
+            "change_rate_score": 22,
+            "continuity_weeks": 3,
+            "continuity_multiplier": 1.2,
+            "formula": "22 × 1.2 = 26.4 → normalized to 7.4"
+          }
+        }
+      },
+      "total_calculation": {
+        "formula": "(21.5 × 0.4) + (19.3 × 0.4) + (7.4 × 0.2) = 48.2"
+      },
+      "top_articles": [
+        {
+          "rank": 1,
+          "title": "EU, AI 규제법 최종 단계 진입",
+          "source": "한국경제",
+          "published_at": "2025-08-16T14:00:00Z",
+          "summary": "유럽연합이 포괄적인 AI 규제 법안 통과를 앞두고 있어 글로벌 AI 산업에 영향 예상",
+          "url": "https://news.example.com/eu-ai-regulation",
+          "contribution": 0.38
+        },
+        {
+          "rank": 2,
+          "title": "국내 AI 규제, 글로벌 기준 맞춰 강화 추진",
+          "source": "디지털타임스",
+          "published_at": "2025-08-16T09:30:00Z",
+          "summary": "국내에서도 AI 윤리 및 안전성 확보를 위한 규제 강화 논의가 본격화",
+          "url": "https://news.example.com/korea-ai-regulation",
+          "contribution": 0.30
+        },
+        {
+          "rank": 3,
+          "title": "AI 기업들, 규제 대응 자체 가이드라인 마련",
+          "source": "전자신문",
+          "published_at": "2025-08-15T17:20:00Z",
+          "summary": "주요 AI 기업들이 정부 규제에 앞서 자체적으로 윤리 가이드라인을 수립하고 있음",
+          "url": "https://news.example.com/ai-companies-guidelines",
+          "contribution": 0.32
+        }
+      ],
+      "top_keywords": [
+        {
+          "keyword": "AI 규제",
+          "trend_level": "very_high",
+          "search_volume": 88,
+          "contribution": 0.42
+        },
+        {
+          "keyword": "EU AI법",
+          "trend_level": "high",
+          "search_volume": 75,
+          "contribution": 0.28
+        },
+        {
+          "keyword": "AI 윤리",
+          "trend_level": "high",
+          "search_volume": 70,
+          "contribution": 0.15
+        },
+        {
+          "keyword": "AI 안전",
+          "trend_level": "medium",
+          "search_volume": 55,
+          "contribution": 0.10
+        },
+        {
+          "keyword": "가이드라인",
+          "trend_level": "medium",
+          "search_volume": 42,
+          "contribution": 0.05
+        }
+      ],
+      "source_references": {
+        "news_analysis": "한국언론진흥재단 (2023) - 뉴스 빅데이터 분석",
+        "trend_analysis": "Google Trends 공식 가이드 (2023)",
+        "data_sources": [
+          "Naver News API",
+          "Google Trends API (pytrends)",
+          "IT뉴스 수동 모니터링"
+        ]
+      }
+    },
+    {
+      "update_id": "RU_004",
+      "index_date": "2025-08-24",
+      "update_type": "regular",
+      "update_time": "2025-08-24T00:00:00Z",
+      "current_score": 50.1,
+      "previous_score": 48.2,
+      "comparison_percentage": 3.94,
+      "main_keyword": "GPT-5 개발 진행 중",
+      "trend_direction": "up",
+      "status": "정상",
+      "weight_breakdown": {
+        "news_weight": {
+          "score": 22.8,
+          "percentage": 40.0,
+          "contribution": 9.1,
+          "details": {
+            "article_count": 20,
+            "article_count_score": 52,
+            "publishing_frequency_multiplier": 1.25,
+            "keyword_diversity": 4,
+            "keyword_diversity_multiplier": 1.2,
+            "freshness_multiplier": 0.88,
+            "formula": "(52 × 1.25 + 1.2) × 0.88 = 58.0 → normalized to 22.8"
+          }
+        },
+        "trend_weight": {
+          "score": 20.1,
+          "percentage": 40.0,
+          "contribution": 8.0,
+          "details": {
+            "trend_growth": 42,
+            "trend_growth_score": 84,
+            "keyword_convergence": 3,
+            "keyword_convergence_multiplier": 1.0,
+            "news_correlation_multiplier": 1.05,
+            "formula": "84 × 1.0 × 1.05 = 88.2 → normalized to 20.1"
+          }
+        },
+        "volatility_weight": {
+          "score": 7.2,
+          "percentage": 20.0,
+          "contribution": 1.4,
+          "details": {
+            "change_rate": 3.94,
+            "change_rate_score": 18,
+            "continuity_weeks": 4,
+            "continuity_multiplier": 1.3,
+            "formula": "18 × 1.3 = 23.4 → normalized to 7.2"
+          }
+        }
+      },
+      "total_calculation": {
+        "formula": "(22.8 × 0.4) + (20.1 × 0.4) + (7.2 × 0.2) = 50.1"
+      },
+      "top_articles": [
+        {
+          "rank": 1,
+          "title": "OpenAI, GPT-5 개발 진행 중 확인",
+          "source": "AI타임스",
+          "published_at": "2025-08-23T15:40:00Z",
+          "summary": "OpenAI CEO가 GPT-5 개발이 진행 중이라고 공식 확인하며 AI 업계 기대감 고조",
+          "url": "https://news.example.com/gpt5-development",
+          "contribution": 0.42
+        },
+        {
+          "rank": 2,
+          "title": "차세대 AI 모델 경쟁, 성능 향상 속도 가속화",
+          "source": "테크크런치코리아",
+          "published_at": "2025-08-23T10:20:00Z",
+          "summary": "주요 AI 기업들이 차세대 모델 개발에 박차를 가하며 기술 경쟁이 심화되고 있음",
+          "url": "https://news.example.com/next-gen-ai-race",
+          "contribution": 0.30
+        },
+        {
+          "rank": 3,
+          "title": "GPT-5, 멀티모달 기능 대폭 강화 예상",
+          "source": "ZDNet Korea",
+          "published_at": "2025-08-22T18:30:00Z",
+          "summary": "GPT-5는 텍스트, 이미지, 음성, 비디오를 통합 처리하는 진정한 멀티모달 AI로 발전할 전망",
+          "url": "https://news.example.com/gpt5-multimodal",
+          "contribution": 0.28
+        }
+      ],
+      "top_keywords": [
+        {
+          "keyword": "GPT-5",
+          "trend_level": "very_high",
+          "search_volume": 95,
+          "contribution": 0.50
+        },
+        {
+          "keyword": "OpenAI",
+          "trend_level": "high",
+          "search_volume": 82,
+          "contribution": 0.22
+        },
+        {
+          "keyword": "멀티모달 AI",
+          "trend_level": "high",
+          "search_volume": 68,
+          "contribution": 0.15
+        },
+        {
+          "keyword": "차세대 AI",
+          "trend_level": "medium",
+          "search_volume": 58,
+          "contribution": 0.08
+        },
+        {
+          "keyword": "AI 경쟁",
+          "trend_level": "medium",
+          "search_volume": 45,
+          "contribution": 0.05
+        }
+      ],
+      "source_references": {
+        "news_analysis": "한국언론진흥재단 (2023) - 뉴스 빅데이터 분석",
+        "trend_analysis": "Google Trends 공식 가이드 (2023)",
+        "data_sources": [
+          "Naver News API",
+          "Google Trends API (pytrends)",
+          "IT뉴스 수동 모니터링"
+        ]
+      }
+    },
+    {
+      "update_id": "RU_005",
+      "index_date": "2025-08-31",
+      "update_type": "regular",
+      "update_time": "2025-08-31T00:00:00Z",
+      "current_score": 48.5,
+      "previous_score": 50.1,
+      "comparison_percentage": -3.19,
+      "main_keyword": "AI 윤리 논의",
+      "trend_direction": "down",
+      "status": "정상",
+      "weight_breakdown": {
+        "news_weight": {
+          "score": 20.5,
+          "percentage": 40.0,
+          "contribution": 8.2,
+          "details": {
+            "article_count": 16,
+            "article_count_score": 45,
+            "publishing_frequency_multiplier": 1.1,
+            "keyword_diversity": 3,
+            "keyword_diversity_multiplier": 0.95,
+            "freshness_multiplier": 0.92,
+            "formula": "(45 × 1.1 + 0.95) × 0.92 = 46.5 → normalized to 20.5"
+          }
+        },
+        "trend_weight": {
+          "score": 19.8,
+          "percentage": 40.0,
+          "contribution": 7.9,
+          "details": {
+            "trend_growth": 35,
+            "trend_growth_score": 70,
+            "keyword_convergence": 3,
+            "keyword_convergence_multiplier": 1.0,
+            "news_correlation_multiplier": 1.0,
+            "formula": "70 × 1.0 × 1.0 = 70 → normalized to 19.8"
+          }
+        },
+        "volatility_weight": {
+          "score": 8.2,
+          "percentage": 20.0,
+          "contribution": 1.6,
+          "details": {
+            "change_rate": -3.19,
+            "change_rate_score": 15,
+            "continuity_weeks": 1,
+            "continuity_multiplier": 0.6,
+            "formula": "15 × 0.6 = 9.0 → normalized to 8.2"
+          }
+        }
+      },
+      "total_calculation": {
+        "formula": "(20.5 × 0.4) + (19.8 × 0.4) + (8.2 × 0.2) = 48.5"
+      },
+      "top_articles": [
+        {
+          "rank": 1,
+          "title": "AI 윤리 가이드라인, 실효성 논란",
+          "source": "한겨레",
+          "published_at": "2025-08-30T13:20:00Z",
+          "summary": "다양한 AI 윤리 가이드라인이 발표되고 있으나 실질적 구속력이 부족하다는 지적",
+          "url": "https://news.example.com/ai-ethics-debate",
+          "contribution": 0.35
+        },
+        {
+          "rank": 2,
+          "title": "생성형 AI 저작권 문제, 법적 기준 부재",
+          "source": "법률신문",
+          "published_at": "2025-08-30T09:15:00Z",
+          "summary": "AI가 생성한 콘텐츠의 저작권 귀속 문제에 대한 명확한 법적 기준이 없어 혼란 가중",
+          "url": "https://news.example.com/ai-copyright-issue",
+          "contribution": 0.32
+        },
+        {
+          "rank": 3,
+          "title": "AI 편향성 문제, 여전히 해결 과제로 남아",
+          "source": "과학기술일보",
+          "published_at": "2025-08-29T16:40:00Z",
+          "summary": "AI 모델의 편향성 문제가 지속적으로 제기되며 공정성 확보 방안 마련 시급",
+          "url": "https://news.example.com/ai-bias-problem",
+          "contribution": 0.33
+        }
+      ],
+      "top_keywords": [
+        {
+          "keyword": "AI 윤리",
+          "trend_level": "high",
+          "search_volume": 78,
+          "contribution": 0.40
+        },
+        {
+          "keyword": "저작권",
+          "trend_level": "high",
+          "search_volume": 72,
+          "contribution": 0.30
+        },
+        {
+          "keyword": "AI 편향",
+          "trend_level": "medium",
+          "search_volume": 60,
+          "contribution": 0.18
+        },
+        {
+          "keyword": "가이드라인",
+          "trend_level": "medium",
+          "search_volume": 48,
+          "contribution": 0.08
+        },
+        {
+          "keyword": "공정성",
+          "trend_level": "low",
+          "search_volume": 35,
+          "contribution": 0.04
+        }
+      ],
+      "source_references": {
+        "news_analysis": "한국언론진흥재단 (2023) - 뉴스 빅데이터 분석",
+        "trend_analysis": "Google Trends 공식 가이드 (2023)",
+        "data_sources": [
+          "Naver News API",
+          "Google Trends API (pytrends)",
+          "IT뉴스 수동 모니터링"
+        ]
+      }
+    },
+    {
+      "update_id": "RU_006",
+      "index_date": "2025-09-07",
+      "update_type": "regular",
+      "update_time": "2025-09-07T00:00:00Z",
+      "current_score": 46.2,
+      "previous_score": 48.5,
+      "comparison_percentage": -4.74,
+      "main_keyword": "AI 서비스 통합",
+      "trend_direction": "down",
+      "status": "정상",
+      "weight_breakdown": {
+        "news_weight": {
+          "score": 19.2,
+          "percentage": 40.0,
+          "contribution": 7.7,
+          "details": {
+            "article_count": 14,
+            "article_count_score": 40,
+            "publishing_frequency_multiplier": 1.05,
+            "keyword_diversity": 3,
+            "keyword_diversity_multiplier": 0.9,
+            "freshness_multiplier": 0.95,
+            "formula": "(40 × 1.05 + 0.9) × 0.95 = 40.7 → normalized to 19.2"
+          }
+        },
+        "trend_weight": {
+          "score": 18.8,
+          "percentage": 40.0,
+          "contribution": 7.5,
+          "details": {
+            "trend_growth": 30,
+            "trend_growth_score": 60,
+            "keyword_convergence": 2,
+            "keyword_convergence_multiplier": 0.9,
+            "news_correlation_multiplier": 1.0,
+            "formula": "60 × 0.9 × 1.0 = 54 → normalized to 18.8"
+          }
+        },
+        "volatility_weight": {
+          "score": 8.2,
+          "percentage": 20.0,
+          "contribution": 1.6,
+          "details": {
+            "change_rate": -4.74,
+            "change_rate_score": 18,
+            "continuity_weeks": 2,
+            "continuity_multiplier": 0.6,
+            "formula": "18 × 0.6 = 10.8 → normalized to 8.2"
+          }
+        }
+      },
+      "total_calculation": {
+        "formula": "(19.2 × 0.4) + (18.8 × 0.4) + (8.2 × 0.2) = 46.2"
+      },
+      "top_articles": [
+        {
+          "rank": 1,
+          "title": "MS, AI 서비스 통합 플랫폼 발표",
+          "source": "ZDNet Korea",
+          "published_at": "2025-09-06T14:30:00Z",
+          "summary": "마이크로소프트가 다양한 AI 서비스를 통합한 단일 플랫폼을 발표하며 사용 편의성 개선",
+          "url": "https://news.example.com/ms-ai-platform",
+          "contribution": 0.38
+        },
+        {
+          "rank": 2,
+          "title": "구글, Gemini 앱 업데이트로 통합 경험 제공",
+          "source": "테크크런치코리아",
+          "published_at": "2025-09-06T10:15:00Z",
+          "summary": "구글이 Gemini 앱을 업데이트하여 검색, 번역, 생성 등 다양한 기능을 통합 제공",
+          "url": "https://news.example.com/google-gemini-update",
+          "contribution": 0.32
+        },
+        {
+          "rank": 3,
+          "title": "AI 서비스 통합 트렌드, 사용자 경험 개선 초점",
+          "source": "AI타임스",
+          "published_at": "2025-09-05T17:20:00Z",
+          "summary": "주요 AI 기업들이 분산된 서비스를 통합하며 사용자 경험 개선에 주력하고 있음",
+          "url": "https://news.example.com/ai-integration-trend",
+          "contribution": 0.30
+        }
+      ],
+      "top_keywords": [
+        {
+          "keyword": "AI 통합",
+          "trend_level": "high",
+          "search_volume": 75,
+          "contribution": 0.38
+        },
+        {
+          "keyword": "MS AI",
+          "trend_level": "medium",
+          "search_volume": 62,
+          "contribution": 0.25
+        },
+        {
+          "keyword": "Gemini",
+          "trend_level": "medium",
+          "search_volume": 58,
+          "contribution": 0.20
+        },
+        {
+          "keyword": "플랫폼",
+          "trend_level": "medium",
+          "search_volume": 50,
+          "contribution": 0.12
+        },
+        {
+          "keyword": "사용자 경험",
+          "trend_level": "low",
+          "search_volume": 38,
+          "contribution": 0.05
+        }
+      ],
+      "source_references": {
+        "news_analysis": "한국언론진흥재단 (2023) - 뉴스 빅데이터 분석",
+        "trend_analysis": "Google Trends 공식 가이드 (2023)",
+        "data_sources": [
+          "Naver News API",
+          "Google Trends API (pytrends)",
+          "IT뉴스 수동 모니터링"
+        ]
+      }
+    },
+    {
+      "update_id": "RU_007",
+      "index_date": "2025-09-14",
+      "update_type": "regular",
+      "update_time": "2025-09-14T00:00:00Z",
+      "current_score": 51.8,
+      "previous_score": 46.2,
+      "comparison_percentage": 12.12,
+      "main_keyword": "AI 투자 열풍",
+      "trend_direction": "up",
+      "status": "정상",
+      "weight_breakdown": {
+        "news_weight": {
+          "score": 23.5,
+          "percentage": 40.0,
+          "contribution": 9.4,
+          "details": {
+            "article_count": 22,
+            "article_count_score": 55,
+            "publishing_frequency_multiplier": 1.4,
+            "keyword_diversity": 5,
+            "keyword_diversity_multiplier": 1.3,
+            "freshness_multiplier": 0.85,
+            "formula": "(55 × 1.4 + 1.3) × 0.85 = 66.6 → normalized to 23.5"
+          }
+        },
+        "trend_weight": {
+          "score": 21.2,
+          "percentage": 40.0,
+          "contribution": 8.5,
+          "details": {
+            "trend_growth": 48,
+            "trend_growth_score": 96,
+            "keyword_convergence": 4,
+            "keyword_convergence_multiplier": 1.3,
+            "news_correlation_multiplier": 0.9,
+            "formula": "96 × 1.3 × 0.9 = 112.3 → normalized to 21.2"
+          }
+        },
+        "volatility_weight": {
+          "score": 7.1,
+          "percentage": 20.0,
+          "contribution": 1.4,
+          "details": {
+            "change_rate": 12.12,
+            "change_rate_score": 32,
+            "continuity_weeks": 1,
+            "continuity_multiplier": 0.75,
+            "formula": "32 × 0.75 = 24 → normalized to 7.1"
+          }
+        }
+      },
+      "total_calculation": {
+        "formula": "(23.5 × 0.4) + (21.2 × 0.4) + (7.1 × 0.2) = 51.8"
+      },
+      "top_articles": [
+        {
+          "rank": 1,
+          "title": "글로벌 AI 투자 규모, 역대 최고치 경신",
+          "source": "매일경제",
+          "published_at": "2025-09-13T15:20:00Z",
+          "summary": "2025년 3분기 글로벌 AI 투자 규모가 500억 달러를 돌파하며 역대 최고치를 기록",
+          "url": "https://news.example.com/ai-investment-record",
+          "contribution": 0.45
+        },
+        {
+          "rank": 2,
+          "title": "벤처캐피털, AI 스타트업에 집중 투자",
+          "source": "한국경제",
+          "published_at": "2025-09-13T11:40:00Z",
+          "summary": "주요 벤처캐피털들이 생성형 AI 및 산업 특화 AI 스타트업에 대규모 투자 진행",
+          "url": "https://news.example.com/vc-ai-startup-investment",
+          "contribution": 0.32
+        },
+        {
+          "rank": 3,
+          "title": "국내 AI 기업 투자 유치액, 전년 대비 300% 증가",
+          "source": "전자신문",
+          "published_at": "2025-09-12T18:30:00Z",
+          "summary": "국내 AI 기업들이 올해 들어 전년 대비 3배 이상의 투자를 유치하며 성장세",
+          "url": "https://news.example.com/korea-ai-investment-growth",
+          "contribution": 0.23
+        }
+      ],
+      "top_keywords": [
+        {
+          "keyword": "AI 투자",
+          "trend_level": "very_high",
+          "search_volume": 98,
+          "contribution": 0.48
+        },
+        {
+          "keyword": "벤처캐피털",
+          "trend_level": "high",
+          "search_volume": 80,
+          "contribution": 0.25
+        },
+        {
+          "keyword": "AI 스타트업",
+          "trend_level": "high",
+          "search_volume": 72,
+          "contribution": 0.15
+        },
+        {
+          "keyword": "투자 유치",
+          "trend_level": "medium",
+          "search_volume": 58,
+          "contribution": 0.08
+        },
+        {
+          "keyword": "생성형 AI",
+          "trend_level": "medium",
+          "search_volume": 52,
+          "contribution": 0.04
+        }
+      ],
+      "source_references": {
+        "news_analysis": "한국언론진흥재단 (2023) - 뉴스 빅데이터 분석",
+        "trend_analysis": "Google Trends 공식 가이드 (2023)",
+        "data_sources": [
+          "Naver News API",
+          "Google Trends API (pytrends)",
+          "IT뉴스 수동 모니터링"
+        ]
+      }
+    },
+    {
+      "update_id": "RU_008",
+      "index_date": "2025-09-21",
+      "update_type": "regular",
+      "update_time": "2025-09-21T00:00:00Z",
+      "current_score": 54.3,
+      "previous_score": 51.8,
+      "comparison_percentage": 4.83,
+      "main_keyword": "AI 보안 위협",
+      "trend_direction": "up",
+      "status": "정상",
+      "weight_breakdown": {
+        "news_weight": {
+          "score": 24.2,
+          "percentage": 40.0,
+          "contribution": 9.7,
+          "details": {
+            "article_count": 24,
+            "article_count_score": 58,
+            "publishing_frequency_multiplier": 1.35,
+            "keyword_diversity": 4,
+            "keyword_diversity_multiplier": 1.15,
+            "freshness_multiplier": 0.9,
+            "formula": "(58 × 1.35 + 1.15) × 0.9 = 71.5 → normalized to 24.2"
+          }
+        },
+        "trend_weight": {
+          "score": 22.1,
+          "percentage": 40.0,
+          "contribution": 8.8,
+          "details": {
+            "trend_growth": 52,
+            "trend_growth_score": 100,
+            "keyword_convergence": 3,
+            "keyword_convergence_multiplier": 1.0,
+            "news_correlation_multiplier": 1.0,
+            "formula": "100 × 1.0 × 1.0 = 100 → normalized to 22.1"
+          }
+        },
+        "volatility_weight": {
+          "score": 8.0,
+          "percentage": 20.0,
+          "contribution": 1.6,
+          "details": {
+            "change_rate": 4.83,
+            "change_rate_score": 20,
+            "continuity_weeks": 2,
+            "continuity_multiplier": 1.0,
+            "formula": "20 × 1.0 = 20 → normalized to 8.0"
+          }
+        }
+      },
+      "total_calculation": {
+        "formula": "(24.2 × 0.4) + (22.1 × 0.4) + (8.0 × 0.2) = 54.3"
+      },
+      "top_articles": [
+        {
+          "rank": 1,
+          "title": "AI 활용한 사이버 공격 급증, 보안 대책 시급",
+          "source": "보안뉴스",
+          "published_at": "2025-09-20T16:30:00Z",
+          "summary": "생성형 AI를 활용한 정교한 사이버 공격이 증가하며 새로운 보안 위협으로 부상",
+          "url": "https://news.example.com/ai-cyber-attack",
+          "contribution": 0.42
+        },
+        {
+          "rank": 2,
+          "title": "AI 모델 해킹 가능성, 전문가들 경고",
+          "source": "디지털타임스",
+          "published_at": "2025-09-20T12:15:00Z",
+          "summary": "AI 모델 자체가 해킹 대상이 될 수 있다는 연구 결과 발표로 보안 우려 증대",
+          "url": "https://news.example.com/ai-model-hacking",
+          "contribution": 0.35
+        },
+        {
+          "rank": 3,
+          "title": "AI 기반 딥페이크 범죄 증가, 법적 대응 마련",
+          "source": "법률신문",
+          "published_at": "2025-09-19T20:40:00Z",
+          "summary": "AI로 생성된 딥페이크를 이용한 범죄가 증가하며 법적 대응 방안 논의 본격화",
+          "url": "https://news.example.com/deepfake-crime",
+          "contribution": 0.23
+        }
+      ],
+      "top_keywords": [
+        {
+          "keyword": "AI 보안",
+          "trend_level": "very_high",
+          "search_volume": 92,
+          "contribution": 0.45
+        },
+        {
+          "keyword": "사이버 공격",
+          "trend_level": "high",
+          "search_volume": 85,
+          "contribution": 0.28
+        },
+        {
+          "keyword": "딥페이크",
+          "trend_level": "high",
+          "search_volume": 78,
+          "contribution": 0.15
+        },
+        {
+          "keyword": "AI 해킹",
+          "trend_level": "medium",
+          "search_volume": 62,
+          "contribution": 0.08
+        },
+        {
+          "keyword": "보안 위협",
+          "trend_level": "medium",
+          "search_volume": 55,
+          "contribution": 0.04
+        }
+      ],
+      "source_references": {
+        "news_analysis": "한국언론진흥재단 (2023) - 뉴스 빅데이터 분석",
+        "trend_analysis": "Google Trends 공식 가이드 (2023)",
+        "data_sources": [
+          "Naver News API",
+          "Google Trends API (pytrends)",
+          "IT뉴스 수동 모니터링"
+        ]
+      }
+    },
+    {
+      "update_id": "RU_009",
+      "index_date": "2025-09-28",
+      "update_type": "regular",
+      "update_time": "2025-09-28T00:00:00Z",
+      "current_score": 52.1,
+      "previous_score": 54.3,
+      "comparison_percentage": -4.05,
+      "main_keyword": "AI 기업 실적",
+      "trend_direction": "down",
+      "status": "정상",
+      "weight_breakdown": {
+        "news_weight": {
+          "score": 22.8,
+          "percentage": 40.0,
+          "contribution": 9.1,
+          "details": {
+            "article_count": 19,
+            "article_count_score": 50,
+            "publishing_frequency_multiplier": 1.25,
+            "keyword_diversity": 4,
+            "keyword_diversity_multiplier": 1.1,
+            "freshness_multiplier": 0.88,
+            "formula": "(50 × 1.25 + 1.1) × 0.88 = 55.9 → normalized to 22.8"
+          }
+        },
+        "trend_weight": {
+          "score": 21.3,
+          "percentage": 40.0,
+          "contribution": 8.5,
+          "details": {
+            "trend_growth": 40,
+            "trend_growth_score": 80,
+            "keyword_convergence": 3,
+            "keyword_convergence_multiplier": 1.0,
+            "news_correlation_multiplier": 0.95,
+            "formula": "80 × 1.0 × 0.95 = 76 → normalized to 21.3"
+          }
+        },
+        "volatility_weight": {
+          "score": 8.0,
+          "percentage": 20.0,
+          "contribution": 1.6,
+          "details": {
+            "change_rate": -4.05,
+            "change_rate_score": 18,
+            "continuity_weeks": 1,
+            "continuity_multiplier": 0.6,
+            "formula": "18 × 0.6 = 10.8 → normalized to 8.0"
+          }
+        }
+      },
+      "total_calculation": {
+        "formula": "(22.8 × 0.4) + (21.3 × 0.4) + (8.0 × 0.2) = 52.1"
+      },
+      "top_articles": [
+        {
+          "rank": 1,
+          "title": "주요 AI 기업 3분기 실적 발표, 혼조세",
+          "source": "한국경제",
+          "published_at": "2025-09-27T15:00:00Z",
+          "summary": "주요 AI 기업들의 3분기 실적이 예상을 소폭 상회하며 안정적인 성장세 시현",
+          "url": "https://news.example.com/ai-companies-earnings",
+          "contribution": 0.40
+        },
+        {
+          "rank": 2,
+          "title": "OpenAI 매출 급증, 연 매출 20억 달러 돌파",
+          "source": "테크크런치코리아",
+          "published_at": "2025-09-27T11:20:00Z",
+          "summary": "OpenAI가 ChatGPT 유료 구독자 증가로 연 매출 20억 달러를 돌파했다고 발표",
+          "url": "https://news.example.com/openai-revenue",
+          "contribution": 0.35
+        },
+        {
+          "rank": 3,
+          "title": "AI 반도체 수요 증가, 엔비디아 실적 호조",
+          "source": "전자신문",
+          "published_at": "2025-09-26T18:30:00Z",
+          "summary": "AI 학습용 GPU 수요 증가로 엔비디아가 예상을 뛰어넘는 실적 발표",
+          "url": "https://news.example.com/nvidia-earnings",
+          "contribution": 0.25
+        }
+      ],
+      "top_keywords": [
+        {
+          "keyword": "AI 실적",
+          "trend_level": "high",
+          "search_volume": 82,
+          "contribution": 0.42
+        },
+        {
+          "keyword": "OpenAI 매출",
+          "trend_level": "high",
+          "search_volume": 75,
+          "contribution": 0.28
+        },
+        {
+          "keyword": "엔비디아",
+          "trend_level": "medium",
+          "search_volume": 68,
+          "contribution": 0.18
+        },
+        {
+          "keyword": "AI 반도체",
+          "trend_level": "medium",
+          "search_volume": 55,
+          "contribution": 0.08
+        },
+        {
+          "keyword": "ChatGPT 구독",
+          "trend_level": "low",
+          "search_volume": 42,
+          "contribution": 0.04
+        }
+      ],
+      "source_references": {
+        "news_analysis": "한국언론진흥재단 (2023) - 뉴스 빅데이터 분석",
+        "trend_analysis": "Google Trends 공식 가이드 (2023)",
+        "data_sources": [
+          "Naver News API",
+          "Google Trends API (pytrends)",
+          "IT뉴스 수동 모니터링"
+        ]
+      }
+    },
+    {
+      "update_id": "RU_010",
+      "index_date": "2025-10-05",
+      "update_type": "regular",
+      "update_time": "2025-10-05T00:00:00Z",
+      "current_score": 55.7,
+      "previous_score": 52.1,
+      "comparison_percentage": 6.91,
+      "main_keyword": "AI 국제 표준",
+      "trend_direction": "up",
+      "status": "정상",
+      "weight_breakdown": {
+        "news_weight": {
+          "score": 25.1,
+          "percentage": 40.0,
+          "contribution": 10.0,
+          "details": {
+            "article_count": 26,
+            "article_count_score": 60,
+            "publishing_frequency_multiplier": 1.3,
+            "keyword_diversity": 5,
+            "keyword_diversity_multiplier": 1.25,
+            "freshness_multiplier": 0.9,
+            "formula": "(60 × 1.3 + 1.25) × 0.9 = 71.3 → normalized to 25.1"
+          }
+        },
+        "trend_weight": {
+          "score": 22.6,
+          "percentage": 40.0,
+          "contribution": 9.0,
+          "details": {
+            "trend_growth": 45,
+            "trend_growth_score": 90,
+            "keyword_convergence": 4,
+            "keyword_convergence_multiplier": 1.2,
+            "news_correlation_multiplier": 0.95,
+            "formula": "90 × 1.2 × 0.95 = 102.6 → normalized to 22.6"
+          }
+        },
+        "volatility_weight": {
+          "score": 8.0,
+          "percentage": 20.0,
+          "contribution": 1.6,
+          "details": {
+            "change_rate": 6.91,
+            "change_rate_score": 24,
+            "continuity_weeks": 1,
+            "continuity_multiplier": 0.85,
+            "formula": "24 × 0.85 = 20.4 → normalized to 8.0"
+          }
+        }
+      },
+      "total_calculation": {
+        "formula": "(25.1 × 0.4) + (22.6 × 0.4) + (8.0 × 0.2) = 55.7"
+      },
+      "top_articles": [
+        {
+          "rank": 1,
+          "title": "ISO, AI 국제 표준 초안 공개",
+          "source": "디지털타임스",
+          "published_at": "2025-10-04T14:40:00Z",
+          "summary": "국제표준화기구(ISO)가 AI 시스템 개발 및 운영에 대한 국제 표준 초안을 공개",
+          "url": "https://news.example.com/iso-ai-standard",
+          "contribution": 0.40
+        },
+        {
+          "rank": 2,
+          "title": "한·미·EU, AI 안전 표준 공동 개발 합의",
+          "source": "연합뉴스",
+          "published_at": "2025-10-04T10:30:00Z",
+          "summary": "한국, 미국, EU가 AI 안전성 및 신뢰성 확보를 위한 표준 공동 개발에 합의",
+          "url": "https://news.example.com/global-ai-standard-agreement",
+          "contribution": 0.35
+        },
+        {
+          "rank": 3,
+          "title": "AI 표준화, 산업 전반에 미칠 영향은?",
+          "source": "AI타임스",
+          "published_at": "2025-10-03T17:20:00Z",
+          "summary": "AI 국제 표준화가 진행되며 관련 산업의 구조 변화 및 새로운 기회 창출 전망",
+          "url": "https://news.example.com/ai-standardization-impact",
+          "contribution": 0.25
+        }
+      ],
+      "top_keywords": [
+        {
+          "keyword": "AI 표준",
+          "trend_level": "very_high",
+          "search_volume": 88,
+          "contribution": 0.45
+        },
+        {
+          "keyword": "ISO",
+          "trend_level": "high",
+          "search_volume": 78,
+          "contribution": 0.25
+        },
+        {
+          "keyword": "국제 협력",
+          "trend_level": "high",
+          "search_volume": 70,
+          "contribution": 0.18
+        },
+        {
+          "keyword": "AI 안전",
+          "trend_level": "medium",
+          "search_volume": 58,
+          "contribution": 0.08
+        },
+        {
+          "keyword": "표준화",
+          "trend_level": "medium",
+          "search_volume": 48,
+          "contribution": 0.04
+        }
+      ],
+      "source_references": {
+        "news_analysis": "한국언론진흥재단 (2023) - 뉴스 빅데이터 분석",
+        "trend_analysis": "Google Trends 공식 가이드 (2023)",
+        "data_sources": [
+          "Naver News API",
+          "Google Trends API (pytrends)",
+          "IT뉴스 수동 모니터링"
+        ]
+      }
+    },
+    {
+      "update_id": "RU_011",
+      "index_date": "2025-10-12",
+      "update_type": "regular",
+      "update_time": "2025-10-12T00:00:00Z",
+      "current_score": 58.2,
+      "previous_score": 55.7,
+      "comparison_percentage": 4.48,
+      "main_keyword": "AI 의료 활용",
+      "trend_direction": "up",
+      "status": "정상",
+      "weight_breakdown": {
+        "news_weight": {
+          "score": 26.5,
+          "percentage": 40.0,
+          "contribution": 10.6,
+          "details": {
+            "article_count": 28,
+            "article_count_score": 65,
+            "publishing_frequency_multiplier": 1.35,
+            "keyword_diversity": 5,
+            "keyword_diversity_multiplier": 1.3,
+            "freshness_multiplier": 0.88,
+            "formula": "(65 × 1.35 + 1.3) × 0.88 = 78.5 → normalized to 26.5"
+          }
+        },
+        "trend_weight": {
+          "score": 23.7,
+          "percentage": 40.0,
+          "contribution": 9.5,
+          "details": {
+            "trend_growth": 50,
+            "trend_growth_score": 100,
+            "keyword_convergence": 4,
+            "keyword_convergence_multiplier": 1.15,
+            "news_correlation_multiplier": 0.98,
+            "formula": "100 × 1.15 × 0.98 = 112.7 → normalized to 23.7"
+          }
+        },
+        "volatility_weight": {
+          "score": 8.0,
+          "percentage": 20.0,
+          "contribution": 1.6,
+          "details": {
+            "change_rate": 4.48,
+            "change_rate_score": 20,
+            "continuity_weeks": 2,
+            "continuity_multiplier": 1.0,
+            "formula": "20 × 1.0 = 20 → normalized to 8.0"
+          }
+        }
+      },
+      "total_calculation": {
+        "formula": "(26.5 × 0.4) + (23.7 × 0.4) + (8.0 × 0.2) = 58.2"
+      },
+      "top_articles": [
+        {
+          "rank": 1,
+          "title": "AI 암 진단 정확도, 의사 수준 도달",
+          "source": "메디컬타임스",
+          "published_at": "2025-10-11T15:30:00Z",
+          "summary": "최신 AI 모델이 암 진단에서 전문의와 동등한 수준의 정확도를 보이며 의료 혁신 기대",
+          "url": "https://news.example.com/ai-cancer-diagnosis",
+          "contribution": 0.42
+        },
+        {
+          "rank": 2,
+          "title": "서울대병원, AI 기반 진단 시스템 도입",
+          "source": "청년의사",
+          "published_at": "2025-10-11T11:20:00Z",
+          "summary": "서울대병원이 AI 기반 영상 진단 시스템을 공식 도입하며 진단 시간 50% 단축",
+          "url": "https://news.example.com/snuh-ai-system",
+          "contribution": 0.35
+        },
+        {
+          "rank": 3,
+          "title": "AI 신약 개발, 임상 진입 사례 증가",
+          "source": "바이오스펙테이터",
+          "published_at": "2025-10-10T18:45:00Z",
+          "summary": "AI로 개발된 신약 후보물질들이 잇따라 임상시험에 진입하며 성과 가시화",
+          "url": "https://news.example.com/ai-drug-development",
+          "contribution": 0.23
+        }
+      ],
+      "top_keywords": [
+        {
+          "keyword": "AI 의료",
+          "trend_level": "very_high",
+          "search_volume": 95,
+          "contribution": 0.48
+        },
+        {
+          "keyword": "AI 진단",
+          "trend_level": "high",
+          "search_volume": 82,
+          "contribution": 0.25
+        },
+        {
+          "keyword": "AI 신약",
+          "trend_level": "high",
+          "search_volume": 72,
+          "contribution": 0.15
+        },
+        {
+          "keyword": "암 진단",
+          "trend_level": "medium",
+          "search_volume": 58,
+          "contribution": 0.08
+        },
+        {
+          "keyword": "의료 혁신",
+          "trend_level": "medium",
+          "search_volume": 48,
+          "contribution": 0.04
+        }
+      ],
+      "source_references": {
+        "news_analysis": "한국언론진흥재단 (2023) - 뉴스 빅데이터 분석",
+        "trend_analysis": "Google Trends 공식 가이드 (2023)",
+        "data_sources": [
+          "Naver News API",
+          "Google Trends API (pytrends)",
+          "IT뉴스 수동 모니터링"
+        ]
+      }
+    },
+    {
+      "update_id": "RU_012",
+      "index_date": "2025-10-19",
+      "update_type": "regular",
+      "update_time": "2025-10-19T00:00:00Z",
+      "current_score": 61.5,
+      "previous_score": 58.2,
+      "comparison_percentage": 5.67,
+      "main_keyword": "GPT-5 출시 임박",
+      "trend_direction": "up",
+      "status": "정상",
+      "weight_breakdown": {
+        "news_weight": {
+          "score": 28.5,
+          "percentage": 40.0,
+          "contribution": 11.4,
+          "details": {
+            "article_count": 30,
+            "article_count_score": 70,
+            "publishing_frequency_multiplier": 1.4,
+            "keyword_diversity": 6,
+            "keyword_diversity_multiplier": 1.35,
+            "freshness_multiplier": 0.85,
+            "formula": "(70 × 1.4 + 1.35) × 0.85 = 84.4 → normalized to 28.5"
+          }
+        },
+        "trend_weight": {
+          "score": 24.8,
+          "percentage": 40.0,
+          "contribution": 9.9,
+          "details": {
+            "trend_growth": 55,
+            "trend_growth_score": 100,
+            "keyword_convergence": 5,
+            "keyword_convergence_multiplier": 1.3,
+            "news_correlation_multiplier": 0.92,
+            "formula": "100 × 1.3 × 0.92 = 119.6 → normalized to 24.8"
+          }
+        },
+        "volatility_weight": {
+          "score": 8.2,
+          "percentage": 20.0,
+          "contribution": 1.6,
+          "details": {
+            "change_rate": 5.67,
+            "change_rate_score": 22,
+            "continuity_weeks": 3,
+            "continuity_multiplier": 1.15,
+            "formula": "22 × 1.15 = 25.3 → normalized to 8.2"
+          }
+        }
+      },
+      "total_calculation": {
+        "formula": "(28.5 × 0.4) + (24.8 × 0.4) + (8.2 × 0.2) = 61.5"
+      },
+      "top_articles": [
+        {
+          "rank": 1,
+          "title": "OpenAI CEO, GPT-5 연내 출시 시사",
+          "source": "AI타임스",
+          "published_at": "2025-10-18T16:20:00Z",
+          "summary": "Sam Altman이 GPT-5가 2025년 내에 출시될 가능성을 시사하며 AI 업계 기대감 고조",
+          "url": "https://news.example.com/gpt5-release-hint",
+          "contribution": 0.45
+        },
+        {
+          "rank": 2,
+          "title": "GPT-5, AGI 수준 근접할 것으로 전망",
+          "source": "테크크런치코리아",
+          "published_at": "2025-10-18T12:30:00Z",
+          "summary": "전문가들이 GPT-5가 범용 인공지능(AGI)에 한 걸음 더 가까워질 것으로 예측",
+          "url": "https://news.example.com/gpt5-agi-approach",
+          "contribution": 0.32
+        },
+        {
+          "rank": 3,
+          "title": "AI 경쟁 심화, 구글·Anthropic 대응 전략 가속",
+          "source": "한국경제",
+          "published_at": "2025-10-17T20:15:00Z",
+          "summary": "GPT-5 출시를 앞두고 구글과 Anthropic도 차세대 모델 개발에 박차",
+          "url": "https://news.example.com/ai-competition-intensifies",
+          "contribution": 0.23
+        }
+      ],
+      "top_keywords": [
+        {
+          "keyword": "GPT-5",
+          "trend_level": "very_high",
+          "search_volume": 100,
+          "contribution": 0.50
+        },
+        {
+          "keyword": "AGI",
+          "trend_level": "very_high",
+          "search_volume": 88,
+          "contribution": 0.25
+        },
+        {
+          "keyword": "OpenAI",
+          "trend_level": "high",
+          "search_volume": 80,
+          "contribution": 0.15
+        },
+        {
+          "keyword": "AI 경쟁",
+          "trend_level": "medium",
+          "search_volume": 62,
+          "contribution": 0.07
+        },
+        {
+          "keyword": "차세대 AI",
+          "trend_level": "medium",
+          "search_volume": 52,
+          "contribution": 0.03
+        }
+      ],
+      "source_references": {
+        "news_analysis": "한국언론진흥재단 (2023) - 뉴스 빅데이터 분석",
+        "trend_analysis": "Google Trends 공식 가이드 (2023)",
+        "data_sources": [
+          "Naver News API",
+          "Google Trends API (pytrends)",
+          "IT뉴스 수동 모니터링"
+        ]
+      }
+    }
+  ]
+}
