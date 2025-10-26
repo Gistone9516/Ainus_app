@@ -11,7 +11,7 @@ import { spacing, borderRadius } from '../theme/spacing';
 
 const HomeScreen = ({ navigation }) => {
   // Mock data - 실제 앱에서는 API에서 가져옴
-  const userName = '최수안';
+  const userName = '관리자';
   const userJob = '소프트웨어 개발자';
 
   const globalIssueIndex = {
