@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Dimensions } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { LineChart } from 'react-native-chart-kit';
 import IssueIndexCard from '../components/common/IssueIndexCard';
 import InsightCard from '../components/common/InsightCard';
 import Button from '../components/common/Button';
@@ -33,6 +34,21 @@ const HomeScreen = ({ navigation }) => {
       '⚖️ AI 저작권 규제 법안 발표',
       '💼 AI로 코딩 업무 50% 자동화',
     ],
+  };
+
+  // 과거 데이터 - 그래프 시각화용 (최근 6개월)
+  const globalIndexHistory = {
+    labels: ['6개월전', '5개월전', '4개월전', '3개월전', '2개월전', '현재'],
+    datasets: [{
+      data: [45, 52, 58, 65, 72, 78],
+    }],
+  };
+
+  const jobIndexHistory = {
+    labels: ['6개월전', '5개월전', '4개월전', '3개월전', '2개월전', '현재'],
+    datasets: [{
+      data: [38, 48, 60, 70, 76, 82],
+    }],
   };
 
   const latestInsights = [
@@ -106,6 +122,32 @@ const HomeScreen = ({ navigation }) => {
             mainIssues={globalIssueIndex.mainIssues}
             onPress={() => {/* Navigate to detail */}}
           />
+          <View style={styles.chartContainer}>
+            <Text style={styles.chartTitle}>📊 지수 변화 추이 (최근 6개월)</Text>
+            <LineChart
+              data={globalIndexHistory}
+              width={Dimensions.get('window').width - spacing.md * 2}
+              height={220}
+              chartConfig={{
+                backgroundColor: colors.card,
+                backgroundGradientFrom: colors.card,
+                backgroundGradientTo: colors.card,
+                decimalPlaces: 0,
+                color: (opacity = 1) => `rgba(59, 130, 246, ${opacity})`,
+                labelColor: (opacity = 1) => `rgba(107, 114, 128, ${opacity})`,
+                style: {
+                  borderRadius: borderRadius.lg,
+                },
+                propsForDots: {
+                  r: '6',
+                  strokeWidth: '2',
+                  stroke: colors.primary,
+                },
+              }}
+              bezier
+              style={styles.chart}
+            />
+          </View>
         </View>
 
         {/* Divider */}
@@ -123,6 +165,32 @@ const HomeScreen = ({ navigation }) => {
             mainIssues={jobIssueIndex.mainIssues}
             onPress={() => {/* Navigate to detail */}}
           />
+          <View style={styles.chartContainer}>
+            <Text style={styles.chartTitle}>📊 직업별 지수 변화 추이 (최근 6개월)</Text>
+            <LineChart
+              data={jobIndexHistory}
+              width={Dimensions.get('window').width - spacing.md * 2}
+              height={220}
+              chartConfig={{
+                backgroundColor: colors.card,
+                backgroundGradientFrom: colors.card,
+                backgroundGradientTo: colors.card,
+                decimalPlaces: 0,
+                color: (opacity = 1) => `rgba(239, 68, 68, ${opacity})`,
+                labelColor: (opacity = 1) => `rgba(107, 114, 128, ${opacity})`,
+                style: {
+                  borderRadius: borderRadius.lg,
+                },
+                propsForDots: {
+                  r: '6',
+                  strokeWidth: '2',
+                  stroke: '#EF4444',
+                },
+              }}
+              bezier
+              style={styles.chart}
+            />
+          </View>
           <View style={styles.insightBox}>
             <Text style={styles.insightText}>
               💡 AI 코딩 도구가 크게 발전했습니다. 새로운 스킬 학습을 권장합니다.
@@ -349,6 +417,27 @@ const styles = StyleSheet.create({
   },
   recommendButton: {
     marginTop: spacing.sm,
+  },
+  chartContainer: {
+    marginTop: spacing.md,
+    backgroundColor: colors.card,
+    borderRadius: borderRadius.lg,
+    padding: spacing.md,
+    shadowColor: colors.shadow,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  chartTitle: {
+    ...textStyles.body1,
+    fontWeight: '600',
+    color: colors.text,
+    marginBottom: spacing.md,
+  },
+  chart: {
+    marginVertical: spacing.xs,
+    borderRadius: borderRadius.lg,
   },
 });
 
